@@ -2,7 +2,7 @@ import { Text, View, Image } from "react-native";
 import React from 'react';
 import styles from "./styles";
 
-const NewsCard = () => {
+const NewsCard = (poster, date, title, description) => {
     return (
         <View style={[styles.card, { flexDirection: "column" }]}>
         <View style={{ flexDirection: "row" }}>
@@ -10,8 +10,8 @@ const NewsCard = () => {
           <View
             style={{ marginLeft: 10, flexDirection: "column" }}
           >
-            <Text style={styles.text}>Nghị quyết TW</Text>
-            <Text>21-08-2019</Text>
+            <Text style={styles.text}>poster</Text>
+            <Text>date</Text>
           </View>
         </View>
 
@@ -20,8 +20,8 @@ const NewsCard = () => {
           <Image style={styles.news_image} source={require("../assets/Rectangle.png")} />
 
           <View style={{marginTop: 10}}>
-            <Text style={styles.text}>Hội nghị cán bộ toàn quốc quán triệt Nghị quyết TW 8 khoá XII...</Text>
-            <Text>Ủy viên Bộ Chính trị, Thường trực Ban Bí thư Trần Quốc Vượng tới dự và phát biểu chỉ đạo Hội nghị…</Text>
+            <Text style={styles.text}>title</Text>
+            <Text>description</Text>
           </View>
           
 
